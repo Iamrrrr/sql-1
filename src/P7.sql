@@ -1,8 +1,10 @@
+-- Delete Customer
 DELETE 
 FROM customers
 WHERE customer_id=10001;
 
 
+-- Bonus
 DELETE 
 FROM sales
 WHERE customer_id=(SELECT customer_id
