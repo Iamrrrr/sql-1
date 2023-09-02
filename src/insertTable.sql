@@ -1,3 +1,4 @@
+-- Insert for employees table
 insert into employees
 values(10001,'Ali Bin Abu','Manager','HR',2000.00);
 
@@ -11,18 +12,23 @@ insert into employees
 values(10004,'Joseline','Manager','IT',60000.00);
 
 
+-- Insert for inventories table
 insert into inventories
 values(10001,'Fish Burger',100,10.50);
 
 insert into inventories
 values(10002,'Chicken Burger',100,9.00);
 
+
+-- Insert for customers table
 insert into customers
 values(10000,'Cherry Lim','New York');
 
 insert into customers
 values(10001,'Tom','Malaysia');
 
+
+-- Insert for orders table
 insert into orders
 values(10000,'22-JAN-23',19.50,10000);
 
@@ -30,6 +36,7 @@ insert into orders
 values(10001,'22-JAN-23',10.50,10000);
 
 
+-- Insert for sales table
 insert into sales
 values(10000,10001,10000,1,'22-JAN-23');
 
