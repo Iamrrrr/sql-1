@@ -1,4 +1,4 @@
-
+-- Table employees
 create table employees(
 	id number(5) NOT NULL,
 	name varchar(50) NOT NULL,
@@ -8,6 +8,7 @@ create table employees(
 	primary key(id)
 );
 
+-- Table inventories
 create table inventories(
 	product_id number(5) NOT NULL,
 	product_name varchar(50) NOT NULL,
@@ -16,6 +17,7 @@ create table inventories(
 	primary key(product_id)
 );
 
+-- Table customers
 create table customers(
 	customer_id number(5) NOT NULL,
 	customer_name varchar(50) NOT NULL,
@@ -23,6 +25,7 @@ create table customers(
 	primary key(customer_id)
 );
 
+-- Table orders
 create table orders(
 	order_id number(5) NOT NULL,
 	order_date date NOT NULL,
@@ -32,6 +35,7 @@ create table orders(
 	foreign key (customer_id) references customers(customer_id)
 );
 
+-- Table sales
 create table sales(
 	order_id number(5) NOT NULL,
 	product_id number(5) NOT NULL,
